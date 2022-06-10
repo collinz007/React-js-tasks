@@ -3,7 +3,7 @@
 
 React.js is a declarative, efficient, and flexible JavaScript library for building user interfaces.It is usually used to create view layers for website and mobile apps.
 
-*How to set up required tools to develop web applications with React?*
+**How to set up required tools to develop web applications with React?**
 
 - Your familiarity with HTML and JavaScript
 - If you&#39;re learning React or creating a new single-page app, use Create React App.
@@ -40,7 +40,7 @@ Components in react serve the same purpose as JavaScript functions, but work in 
 React state is a component that maintains internal state data, allowing an object in a component to be able to be used, encapsulated and changed.
 
 ### Demonstration of state in react app
-
+```
 class Car extends React.Component {
   constructor(props) {
     super(props);
@@ -53,12 +53,12 @@ class Car extends React.Component {
       </div>
     );}
 }
-
+```
 ### What is an event?
 
 Just like HTML DOM events, React events can be used to perform actions based on user events on the view page; such as: click, change, mouseover etc.
 
-How are events handled in react?**
+**How are events handled in react?**
 
 Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:
 
@@ -66,7 +66,7 @@ Handling events with React elements is very similar to handling events on DOM el
 - With JSX you pass a function as the event handler, rather than a string.
 
 ### Demonstration of react event
-
+```
 class LoggingButton extends React.Component {
   handleClick = () => {
    console.log('this is:', this);}
@@ -75,18 +75,18 @@ class LoggingButton extends React.Component {
        <button onClick={this.handleClick}>Click me</button>
      );}
 }
-
+```
 # React Hooks & Single Page Web app with react.js
 ### What are react hooks?
 
 React hooks allow function components to have access to state and other React features.Therefore, class components are generally no longer needed.
 
 ### Demonstration of using hooks
+```
 function ExampleWithStateHook() {
   const [Hook, setHook] = useState('hook');
 }
-
-
+```
 ### How to build a single page web application with react.js?
 
 We can build a single page web application by:
